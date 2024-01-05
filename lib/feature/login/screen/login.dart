@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:wincept/thread.dart';
+import 'package:wincept/feature/thread/screen/thread.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -53,7 +53,7 @@ class _LoginState extends State<Login> {
                 String password = _passwordController.text;
                 login(username, password, context);
               },
-              child: Text('Login'),
+              child: const Text('Login'),
             ),
           ],
         ),
