@@ -20,33 +20,33 @@ class _LoginState extends State<Login> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Login'),
+        title: const Text('Login'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             TextFormField(
               controller: _usernameController,
-              style: TextStyle(color: Colors.white),
-              decoration: InputDecoration(
+              style: const TextStyle(color: Colors.white),
+              decoration: const InputDecoration(
                 labelText: 'Username',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             TextFormField(
               controller: _passwordController,
               obscureText: true,
-              style: TextStyle(color: Colors.white),
-              decoration: InputDecoration(
+              style: const TextStyle(color: Colors.white),
+              decoration: const InputDecoration(
                 labelText: 'Password',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 24.0),
+            const SizedBox(height: 24.0),
             ElevatedButton(
               onPressed: () {
                 String username = _usernameController.text;
@@ -89,21 +89,8 @@ login(String username, String password, BuildContext context) async {
           ));
     } else {
       print('Login failed with status code: ${response.statusCode}');
-      print('Login failed with status code: ${response.statusCode}');
-      print('Login failed with status code: ${response.statusCode}');
-      print('Login failed with status code: ${response.statusCode}');
-      print('Login failed with status code: ${response.statusCode}');
-      print('Login failed with status code: ${response.statusCode}');
-      print('Login failed with status code: ${response.statusCode}');
     }
   } catch (e) {
-    print('Error during login: $e');
-    print('Error during login: $e');
-    print('Error during login: $e');
-    print('Error during login: $e');
-    print('Error during login: $e');
-    print('Error during login: $e');
-    print('Error during login: $e');
     print('Error during login: $e');
   }
 }

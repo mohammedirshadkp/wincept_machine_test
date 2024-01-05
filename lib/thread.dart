@@ -53,7 +53,7 @@ class _ThreadPageState extends State<ThreadPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Thread App'),
+        title: const Text('Thread App'),
       ),
       body: ListView.builder(
         itemCount: threads.length,
@@ -72,7 +72,7 @@ class _ThreadPageState extends State<ThreadPage> {
           }
         },
         tooltip: 'Add Thread',
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
